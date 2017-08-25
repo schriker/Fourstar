@@ -1,0 +1,263 @@
+body{
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #6f6f6f;
+    background-color: #f7f7f7;
+    background: url(../images/header-bg.jpg) no-repeat center center fixed;
+    background-size: cover;
+}
+
+h2{
+    color: #093e4f;
+    font-weight: 700;
+    font-size: 42px;
+    text-transform: uppercase;
+    margin: 60px 0;
+}
+
+p{
+    text-align: justify;
+    margin-bottom: 45px;
+}
+
+.menu-bg{
+    background-color: #000;
+}
+
+.header{
+    min-height: 175px;
+}
+
+.logo{
+    display: flex;
+}
+
+.logo img{
+    display: block;
+    margin: 0 auto;
+}
+
+.logo a{
+    font-size:22px;
+    font-weight: 500;
+    color:#fff;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.logo a:hover{
+    text-decoration: none;
+    color: #fff;
+}
+
+.phone{
+    color:#fff;
+    font-size: 26px;
+    line-height: 1;
+    padding: 0 0 0 20px;
+}
+
+.phone span{
+    color:#88b1be;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.menu{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu li:hover{
+    background-color: #14ba6a;
+}
+
+.menu li a{
+    display: block;
+    text-transform: uppercase;
+    font-size: 16px;
+    color: #fff;
+    font-weight: 500;
+    padding: 15px 25px;
+}
+
+.menu li a:hover{
+    text-decoration: none;
+}
+
+.menu li:hover > .sub-menu{
+    display: block;
+}
+
+.sub-menu{
+    position: absolute;
+    list-style: none;
+    display: none;
+    margin: 0;
+    padding: 0;
+    background-color: #14ba6a;
+    border-bottom-right-radius: 3px;
+    border-bottom-left-radius: 3px;
+    z-index: 999;
+}
+
+.sub-menu li a{
+    border-bottom: 1px solid #5bd098;
+}
+
+.sub-menu li:last-child a{
+    border: none;
+}
+
+.sub-menu li:last-child{
+    border-bottom-right-radius: 3px;
+    border-bottom-left-radius: 3px;
+}
+
+.sub-menu li:hover{
+    background-color: #109454;
+}
+
+.slider{
+    min-height: 510px;
+}
+
+.slider h2, .slider h3{
+    line-height: 1.75;
+}
+
+.slider h2{
+    font-weight: 700;
+    color:#fff;
+    font-size: 48px;
+    margin: 0;
+}
+
+.slider h3{
+    font-size: 20px;
+    color: #89b2bf;
+    margin-bottom: 40px;
+}
+
+.green-btn{
+    font-size: 16px;
+    font-weight: 700;
+    color: #fff;
+    background-color: #14ba6a;
+    border-radius: 35px;
+    padding: 15px 35px;
+    text-transform: uppercase;
+    box-sizing: border-box;
+}
+
+.green-btn:hover{
+    text-decoration: none;
+    color: #fff;
+    background-color: #89b2bf;
+}
+
+.slider-nav{
+    background-color: #fff;
+    color: #c9c9c9;
+    font-weight: 500;
+    border-radius: 3px;
+    box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.2);
+    min-height: 170px;
+    margin-bottom: -45px;
+    z-index: 100;
+    position: relative;
+}
+
+.slider-btn:first-of-type{
+    border-bottom-left-radius: 3px;
+}
+
+.slider-btn:last-of-type{
+    border-bottom-right-radius: 3px;
+}
+
+.slider-btn::before{
+    content: '';
+    display: none;
+    position: absolute;
+    top: -15px;
+    height: 15px;
+    width: 100%;
+    background-color: #14ba6a;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+}
+
+.slider-btn i::before{
+    font-size: 45px;
+    margin:0;
+}
+
+.slider-btn h3{
+    font-size: 18px;
+    color: #14ba6a;
+    margin-left: 25px;
+}
+
+.slider-btn h4{
+    font-size: 14px;
+    margin-left: 25px;
+}
+
+.slider-btn:hover,
+.slider-btn-active {
+    background-color: #14ba6a;
+    color: #99f2c5;
+    cursor: pointer;
+}
+
+.slider-btn:hover > .align-self-center,
+.slider-btn-active > .align-self-center {
+    margin-top: -25px;
+}
+
+.slider-btn:hover > .slider-btn-arrow,
+.slider-btn-active > .slider-btn-arrow {
+    display: block;
+}
+
+.slider-btn:hover::before,
+.slider-btn-active::before {
+    display: block;
+}
+
+.slider-btn:hover h3,
+.slider-btn-active h3{
+    color: #fff;
+}
+
+.slider-btn-arrow{
+    position: absolute;
+    text-align: center;
+    display: none;
+    bottom: 0;
+    width: 60px;
+    height: 30px;
+    padding: 5px 0 0 0;
+    background-color: #fff;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;    
+}
+
+.slider-btn-arrow i::before{
+    font-size: 22px;
+    color: #c1c1c1;
+}
+
+.content-spacer{
+    background-color: #f7f7f7;
+    height: 115px;
+}
+
+.white-bg{
+    background-color: #fff;
+    padding-bottom: 60px;
+}
