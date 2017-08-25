@@ -207,29 +207,33 @@ p{
     margin-left: 25px;
 }
 
-.slider-btn:hover,
+.slider-btn:hover{
+    cursor: pointer;
+    background-color: #fbfbfb;
+}
+
 .slider-btn-active {
     background-color: #14ba6a;
     color: #99f2c5;
     cursor: pointer;
 }
 
-.slider-btn:hover > .align-self-center,
+.slider-btn-active:hover{
+    background-color: #14ba6a;
+}
+
 .slider-btn-active > .align-self-center {
     margin-top: -25px;
 }
 
-.slider-btn:hover > .slider-btn-arrow,
 .slider-btn-active > .slider-btn-arrow {
     display: block;
 }
 
-.slider-btn:hover::before,
 .slider-btn-active::before {
     display: block;
 }
 
-.slider-btn:hover h3,
 .slider-btn-active h3{
     color: #fff;
 }
