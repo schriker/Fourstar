@@ -485,6 +485,13 @@ textarea:invalid{
     .contact-info{
         display: none !important;
     }
+    .slider h2,
+    h2 {
+        font-size: 30px !important;
+    }
+    .slider h3{
+        font-size: 18px;
+    }
     .logo a{
         width: 100%;
     }
@@ -493,6 +500,9 @@ textarea:invalid{
     }
     .article-img{
         margin-bottom: 45px;
+    }
+    .slider{
+        margin-bottom: 45px !important;
     }
     .slider-btn-text{
         display: none;
