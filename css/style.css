@@ -537,6 +537,7 @@ textarea:invalid{
     .slider h2,
     h2 {
         font-size: 36px;
+        margin-bottom: 15px;
     }
     .slider-btn i::before{
         font-size: 36px;
