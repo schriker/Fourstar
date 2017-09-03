@@ -31,6 +31,7 @@ p{
 
 .logo{
     display: flex;
+    min-height: 175px;
 }
 
 .logo img{
@@ -125,6 +126,11 @@ p{
     min-height: 510px;
 }
 
+.slider > div{
+    min-height: 510px;
+    padding-top: 130px;
+}
+
 .slider h2, .slider h3{
     line-height: 1.75;
 }
@@ -151,6 +157,7 @@ p{
     padding: 15px 35px;
     text-transform: uppercase;
     box-sizing: border-box;
+    line-height: 1;
 }
 
 .green-btn:hover{
@@ -169,6 +176,10 @@ p{
     margin-bottom: -45px;
     z-index: 100;
     position: relative;
+}
+
+.slider-btn{
+    min-height: 170px;
 }
 
 
@@ -335,6 +346,7 @@ p{
 
 .carousel-arrow{
     padding: 15px 20px;
+    margin-top: -80px;
 }
 
 .carousel-arrow:hover{
@@ -345,7 +357,12 @@ p{
     margin: 45px;
 }
 
-.carousel-nav span{
+.owl-dots{
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.owl-dot{
     display: inline-block;
     width: 10px;
     height: 10px;
@@ -354,11 +371,174 @@ p{
     margin-right: 5px;
 }
 
-.carousel-nav span:hover{
+.owl-dot:hover{
     cursor: pointer;
     background-color: #dfdfdf;
 }
 
-.nav-active{
+.owl-dot.active{
     background-color: #14ba6a !important;
+}
+
+.blue-bg{
+    background-color: #033342;
+    background: url(../images/map-bg.jpg) no-repeat center center fixed;
+    background-size: cover;
+}
+
+.blue-bg h2{
+    color: #fff;
+}
+
+.form-line{
+    margin-bottom: 30px;
+}
+
+.form-line input[type="text"]{
+    width: 100%;
+    background-color: #093e4f;
+    color: #fff;
+    padding: 10px 25px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 2px solid #246478;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.form-line input::-webkit-input-placeholder,
+.form-line textarea::-webkit-input-placeholder{
+    color:#fff;
+}
+
+.form-line input[type="text"]:focus,
+.form-line textarea:focus{
+    outline: none;
+    border-bottom-color: #14ba6a;
+}
+
+.form-line textarea{
+    background-color: #093e4f;
+    color: #fff;
+    padding: 10px 25px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 2px solid #246478;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.form-line input[type="text"]:valid, 
+.form-line input[type="text"]:invalid, 
+textarea:focus, 
+textarea:invalid{
+    outline: none;
+    box-shadow: none;
+}
+
+.form-line input[type="submit"]{
+    border:none;
+    cursor: pointer;
+}
+
+.adress-info p:first-of-type{
+    color: #14ba6a;
+}
+
+.adress-info p{
+    text-align: center;
+    margin-top: 25px;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 16px;
+    color: #fff;
+    line-height: 1.75;
+}
+
+.social-btn a{
+    font-size: 18px;
+}
+
+.social-btn a:first-child{
+    padding: 15px 20px;
+    margin-right: 10px;
+}
+
+.social-btn a:last-child{
+    padding: 15px 18px;
+}
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    .slider-btn-arrow, .slider-btn::before{
+        display: none !important;
+    }
+}
+
+@media (max-width: 767px) {
+    .menu-bg{
+        display: none;
+    }
+    .contact-info{
+        display: none !important;
+    }
+    .logo a{
+        width: 100%;
+    }
+    .carousel-arrow{
+        display: none;
+    }
+    .article-img{
+        margin-bottom: 45px;
+    }
+    .slider-btn-text{
+        display: none;
+    }
+    .slider-nav{
+        min-height: 100px;
+        border-radius: 0;
+    }
+    .slider-btn {
+        min-height: 100px;
+    }
+    .slider-btn:last-of-type:hover, 
+    .slider-btn:last-of-type,
+    .slider-btn:first-of-type:hover, 
+    .slider-btn:first-of-type  {
+        border-radius: 0;
+    }
+}
+
+@media (max-width: 991px) {
+    .menu li a{
+        font-size: 14px;
+        padding: 15px 10px;
+    }
+    .slider > div{
+        padding-top: 80px;
+        min-height: 400px;
+    }
+    .slider {
+        min-height: 400px;
+    }
+    .slider h2,
+    h2 {
+        font-size: 36px;
+    }
+    .slider-btn i::before{
+        font-size: 36px;
+    }
+    .slider-btn h3 {
+        font-size: 16px;
+        margin-left: 15px;
+    }
+    .slider-btn h4{
+        margin-left: 15px;
+    }
+    .slider-btn-arrow i::before {
+        font-size: 22px;
+    }
 }

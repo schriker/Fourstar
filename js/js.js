@@ -12,4 +12,29 @@ $(document).ready(function(){
             }
         });
     });
+    $(".owl-carousel").owlCarousel({
+        loop: true,
+        responsive: {
+            0:{
+                autoplay: true,
+                autoplayTimeout: 2500,
+                items: 1
+            },
+            767:{
+                items: 2
+            }
+        }
+    });
+    $(".owl-item").addClass("col-6");
+
+    var owl = $('.owl-carousel');
+    owl.owlCarousel();
+
+    $(".next").click(function(){
+        owl.trigger('next.owl.carousel');
+    });
+    
+    $(".prev").click(function(){
+        owl.trigger('prev.owl.carousel');
+    });
 })
